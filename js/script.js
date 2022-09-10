@@ -36,11 +36,9 @@ speechBtn.addEventListener('click', (event) => {
          if (isSpeaking) {
             synth.resume()
             isSpeaking = false
-            speechBtn.innerHTML = "Pause Speech"
          } else {
             synth.pause()
             isSpeaking = true
-            speechBtn.innerHTML = "Resume Speech"
          }
          setInterval(() => {
             if (!synth.speaking && !isSpeaking) {

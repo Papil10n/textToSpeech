@@ -73,13 +73,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*-------------------------*/
+body {
+  background-color: #777;
+}
 section {
-  background-color: rgb(255, 255, 255);
+  background-color: #999;
   height: 500px;
   width: 400px;
   border-radius: 10px;
-  -webkit-box-shadow: 0px 0px 20px 5px rgb(54, 22, 109);
-          box-shadow: 0px 0px 20px 5px rgb(54, 22, 109);
+  -webkit-box-shadow: 0px 0px 10px black;
+          box-shadow: 0px 0px 10px black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -180,7 +183,13 @@ section {
   color: white;
   width: 20rem;
   height: 3rem;
-  border-radius: 0.3rem;
+  border-radius: 0.4rem;
   font-size: 1.2rem;
+  transition: 0.2s;
   border: none;
+}
+.submit:active {
+  border-radius: 0.8rem;
+  transition: 0.2s;
+  opacity: 0.8;
 }
